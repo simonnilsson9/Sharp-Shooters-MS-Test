@@ -17,12 +17,9 @@ Testar att skicka in `null` som belopp och kontrollerar att resultatet blir 0.
 ## TransferCallback
 
 ### 1. Test_TransferCallback_Return_CorrectBalance
-Testar att överföra pengar mellan två konton och kontrollerar att beloppen på båda kontona justeras korrekt.
+Testar att överföra pengar mellan två konton och kontrollerar att beloppen på båda kontona justeras korrekt, samt att rätt meddelande skrivs ut.
 
-### 2. Test_TransferCallback_Return_CheckTransactionHistory
-Testar att överföra pengar mellan två konton och kontrollerar att transaktionshistoriken uppdateras korrekt för både avsändaren och mottagaren.
-
-### 3. Test_TransferCallback_InvalidAmount_Return_NoTransfer
+### 2. Test_TransferCallback_InvalidAmount_Return_NoTransfer
 Testar att försöka överföra ett ogiltigt belopp och kontrollerar att transaktionen inte genomförs.
 
 ## InitializeUser
