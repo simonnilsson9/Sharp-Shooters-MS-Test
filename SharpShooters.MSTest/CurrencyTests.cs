@@ -19,7 +19,7 @@ namespace SharpShooters.MSTest
             double amount = 100.0;
 
             //Act 
-            double convertedAmount = Currency.ConvertCurrency(amount, fromCurrency, toCurrency);
+            double convertedAmount = Currency.ConvertCurrency(amount, fromCurrency, toCurrency);            
 
             Assert.AreEqual(amount, convertedAmount);
         }

@@ -12,9 +12,10 @@ namespace SharpShooters.MSTest
     {
         [TestMethod]
         public void Test_InitializeUser_CreatesCorrectNumberOfUsers_Return_4()
-        {            
-            List<User> users = Admin.InitializeUser();
+        {
             var expectedUsers = 4;
+
+            List<User> users = Admin.InitializeUser();            
             var result = users.Count;
 
             Assert.AreEqual(expectedUsers, result);

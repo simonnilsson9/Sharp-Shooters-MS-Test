@@ -1,6 +1,4 @@
 ﻿
-
-
 namespace Sharp_Shooters
 {
     internal class Bank
