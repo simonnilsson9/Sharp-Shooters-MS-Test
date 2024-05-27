@@ -2,17 +2,29 @@
 
 ## Currency
 
-### 1. Test_ConvertCurrency_SameCurrency_Return_SameAmount
-Testar att konvertera pengar från en valuta till samma valuta och kontrollerar att resultatet är samma som ingångsvärdet.
+### 1. TestUsdToEuro_Return_Euro_ExRate
+Verifierar att växelkursen från USD till Euro korrekt returneras som 0,93.
 
-### 2. Test_ConvertCurrency_DifferentCurrency_Return_CorrectConversion
-Testar att konvertera pengar från en valuta till en annan och kontrollerar att resultatet är korrekt baserat på en fördefinierad växelkurs.
+### 2. TestUsdToKronor_Return_Kr_ExRate
+Kontrollerar att växelkursen från USD till Svenska kronor korrekt returneras som 10,86.
 
-### 3. Test_ConvertCurrency_InvalidCurrency_Return_NoConversion
-Testar att försöka konvertera pengar med en ogiltig valuta och kontrollerar att summan förblir densamma och att ingen konvertering sker.
+### 3. TestEuroToUsd_Return_Usd_ExRate
+Säkerställer att växelkursen från Euro till USD korrekt returneras som 1,07.
 
-### 4. Test_ConvertCurrency_NullAmount_Return_0
-Testar att skicka in `null` som belopp och kontrollerar att resultatet blir 0.
+### 4. TestEuroToKronor_Return_Kr_ExRate
+Validerar att växelkursen från Euro till Svenska kronor korrekt returneras som 11,68.
+
+### 5. TestKronorToUsd_Return_Usd_ExRate
+Bekräftar att växelkursen från Svenska kronor till USD korrekt returneras som 0,10.
+
+### 6. TestKronorToEuro_Return_Euro_ExRate
+Kontrollerar att växelkursen från Svenska kronor till Euro korrekt returneras som 0,091.
+
+### 7. TestSameCurrency_Return_Same
+Verifierar att växling av samma valuta (USD till USD) returnerar en växelkurs på 1,0.
+
+### 8. TestUnknownCurrency_Return_Same
+Säkerställer att växling från en okänd valuta (GBP) till USD standardiseras till en växelkurs på 1,0.
 
 ## TransferCallback
 
