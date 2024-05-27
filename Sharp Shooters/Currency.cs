@@ -84,7 +84,7 @@ namespace Sharp_Shooters
             }
         }
 
-        private static double GetExchangeRate(Accounts fromCurrency, Accounts toCurrency) //This method looks at what the currency of the account the user wants to send money from is and the at what the account the user want to send money to is.
+        public static double GetExchangeRate(Accounts fromCurrency, Accounts toCurrency) //This method looks at what the currency of the account the user wants to send money from is and the at what the account the user want to send money to is.
         {
             
             double returnCurrency = 1.0;

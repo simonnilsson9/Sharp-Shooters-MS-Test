@@ -46,13 +46,13 @@ namespace SharpShooters.MSTest
             
             using (var sw = new StringWriter())
             {
-                Console.SetOut(sw); // Omdirigera standard output
+                Console.SetOut(sw); 
 
                 //Act
                 TransferData.TransferCallback(transferData);
 
                 var expectedOutput = "Invalid input. Please enter a valid amount...";
-                var result = sw.ToString().Trim(); // Hämta och trimma output-strängen
+                var result = sw.ToString().Trim(); 
                 
                 //Assert
                 Assert.AreEqual(expectedOutput, result); // Jämför output med förväntat resultat
